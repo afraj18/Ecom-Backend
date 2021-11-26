@@ -13,6 +13,7 @@ mongoose.connect(process.env.MONGO_URL).then(
 
 app.use(express.json());
 app.use('/app/auth', authRoute);
+app.use('/app/users', userRoute)
 
 
 
